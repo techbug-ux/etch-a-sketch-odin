@@ -1,0 +1,14 @@
+div{
+    background-color: aqua;
+    width: 30px;
+    height: 30px;
+    display:inline-block;
+    margin: 2px;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc((30px * 17) + (2px * 18));     
+    max-height: calc((30px * 16) + (2px * 1)); 
+}
