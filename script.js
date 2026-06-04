@@ -6,7 +6,7 @@ console.log("hello world")
 
 
 
-for (let i = 0; i < 269; i++) {
+for (let i = 0; i < 255; i++) {
     const square = document.createElement("div");
     document.body.appendChild(square);
     
@@ -28,3 +28,11 @@ document.body.addEventListener('mouseout', e => {
   div.style.backgroundColor = 'black';
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('#prompt').addEventListener('click', promptMe);
+});
+
+function promptMe() {
+    var number = prompt("Please provide an number");
+    alert (number);
+}
